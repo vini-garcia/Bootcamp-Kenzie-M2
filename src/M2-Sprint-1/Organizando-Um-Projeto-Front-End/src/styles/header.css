@@ -1,0 +1,25 @@
+header{
+    height: 5rem;
+    padding: 0 5vw;
+    background-color: var(--background-color);
+    color: azure;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.75);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.links{
+    width: 12.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+}
+
+a{
+    color: var(--color);
+}

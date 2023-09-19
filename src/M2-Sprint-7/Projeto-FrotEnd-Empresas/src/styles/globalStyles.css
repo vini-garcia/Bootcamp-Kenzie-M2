@@ -1,0 +1,156 @@
+
+:root {
+  --blue: #4200ff;
+  /* --backdrop: #4623a713; */
+  --white100: #ffffff;
+  --white95: rgba(255, 255, 255, 0.95);
+  --grey1: #a8a8a8;
+  --grey2: #f8f8f8;
+  --black100: #000000;
+  --black50: rgba(0, 0, 0, 0.5);
+  --black30: rgba(0, 0, 0, 0.3);
+  --black20: rgba(0, 0, 0, 0.2);
+  --black12: rgba(0, 0, 0, 0.12);
+  --black10: rgba(0, 0, 0, 0.1);
+  --red: #ce4646;
+  --green: #4ba036;
+}
+
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0%;
+    font-weight: 400;
+    line-height: 100%;
+    overflow-x: hidden;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  button{
+    cursor: pointer;
+  }
+
+
+  /* ESTILIZAÇÕES DO TOAST */
+
+
+.title__container{
+  width: 18rem;
+  height: 1.5rem;
+  
+  display: flex;
+
+  gap: 0.75rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.title__container > div{
+  width: 1.5rem;
+  height: 1.5rem;
+  
+  background-color: var(--green);
+  
+  border-radius: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title__container > div > img{
+  width: 0.9375rem;
+  height: 0.9375rem;
+}
+
+.title__container > h2{
+  font-size: 1rem;
+  font-weight: 500;
+  
+  color: var(--green);
+}
+
+.toast__container{
+  width: 27.5625rem;
+  height: 7.8125rem;
+
+  border-radius: 0.25rem;
+
+  background-color: var(--white95);
+
+  box-shadow: 0 4px 30px -12px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.0625rem;
+
+  padding: 2rem 1.3125rem;
+
+  position: absolute;
+  bottom: 1.75rem;
+  right: 1rem;
+
+  animation: toastIn 2s linear;
+
+  z-index:0;
+}
+
+.toast__container > small{
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.3125rem;
+
+  color: var(--green);
+
+  width: 23.5625rem;
+}
+
+.toast__add{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.toast__remove{
+animation: toastOut 2s linear;
+}
+
+#errorRed{
+  color: var(--red);
+}
+
+#errorRedBox{
+  background-color:  var(--red);
+}
+
+@keyframes toastIn{
+0% {
+  transform: translateX(150%);
+  opacity: 0;
+  }
+
+100% {
+  transform: translateX(0);
+  opacity: 1;
+  }
+}
+
+@keyframes toastOut{
+0% {
+  transform: translateX(0);
+  opacity: 1;
+  }
+
+100% {
+  transform: translateX(150%);
+  opacity: 0;
+  }
+}

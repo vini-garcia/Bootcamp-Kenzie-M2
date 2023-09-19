@@ -1,0 +1,15 @@
+:root{
+    --colorBrand1: #4C6EF5;
+    --colorBrand2: #364FC7;
+    --textColor1: #F8F9FA;
+    --grey1: #191C1F;
+    --grey2: #212529;
+    --grey3: #343A40;
+    --grey4: #ADB5BD;
+    --grey5: #CED4DA;
+    --grey6: #EDF2FF;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}

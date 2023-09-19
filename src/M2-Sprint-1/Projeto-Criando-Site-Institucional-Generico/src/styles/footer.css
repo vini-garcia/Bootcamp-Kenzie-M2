@@ -1,0 +1,14 @@
+footer{
+    background-color: var(--grey1);
+    height: 119px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_title{
+    color: var(--grey6);
+    font-size: 30px;
+    font-weight: 600;
+}

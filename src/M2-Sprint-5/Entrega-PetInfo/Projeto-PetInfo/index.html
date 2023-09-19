@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+
+    <script type="module" src="./src/scripts/index.js" defer></script>
+
+    <title>Pet Info - index</title>
+</head>
+<body>
+    <main>
+      <section class="info__container">
+        <div class="text__container">
+            <h1>Petinfo</h1>
+            <h2><strong>Amor</strong> e <strong>carinho</strong> por meio do conhecimento</h2>
+            <p>Todas as informações para melhorar a vida do seu pet em um só lugar</p>
+        </div>
+        <div class="images__container">
+            <img class="images__container--cat1" src="./src/assets/images/cat1.svg" alt="Cat">
+            <img class="images__container--dog1" src="./src/assets/images/dog1.svg" alt="Dog">
+            <img class="images__container--cat2" src="./src/assets/images/cat2.svg" alt="White Cat">
+            <img class="images__container--dog2" src="./src/assets/images/dog2.svg" alt="Corgi">
+        </div>
+      </section>
+      <section class="login__container">
+        <h3>Login</h3>
+        <form>
+            <div>
+                <label class="login__label--email" for="email">Email</label>
+                <input class="login__input--email" type="email" name="email" placeholder="Digite seu email aqui">
+            </div>
+            <div>
+                <label class="login__label--password" for="password">Senha</label>
+                <input class="login__input--password" type="password" name="password" placeholder="Digite sua senha aqui">
+            </div>
+            <!-- <p>Senha e/ou email incorreto</p> -->
+            <button type="submit">Acessar</button>
+        </form>
+        <p><strong>Ainda não possui conta?</strong></p>
+        <span>Clicando no botão abaixo, você pode se cadastrar rapidamente</span>
+        <button class="signup__btn">Cadastrar</button>
+      </section>  
+    </main>
+</body>
+</html>

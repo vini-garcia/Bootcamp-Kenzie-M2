@@ -1,0 +1,18 @@
+footer{
+    background-color: var(--grey1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 107px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+footer > h2{
+    color: var(--secondaryColor);
+}
+
+footer > h2 > span{
+    color: var(--white);
+}

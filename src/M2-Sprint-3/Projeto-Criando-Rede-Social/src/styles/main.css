@@ -1,0 +1,400 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 6.75rem;
+  }
+  
+  .container__newPosts {
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-primary);
+    width: 100%;
+  }
+  
+  .newPosts__profile {
+    height: 3.25rem;
+  }
+  
+  .newPosts__title > input {
+    width: 100%;
+    height: 3.25rem;
+  
+    border-radius: var(--border-radius-primary);
+    border: 2px solid var(--color-grey-4);
+  
+    font-family: inherit;
+    font-size: 1rem;
+  
+    padding-left: var(--padding-primary);
+  }
+  
+  .newPosts__title > input:focus {
+    border-color: var(--color-brand-1);
+  }
+  
+  .newPosts__text > textarea {
+    width: 100%;
+    height: 8.125rem;
+  
+    border-radius: var(--border-radius-primary);
+    border: 2px solid var(--color-grey-4);
+    box-sizing: border-box;
+  
+    font-family: inherit;
+    font-size: 1rem;
+  
+    padding: var(--padding-primary) 0 0 var(--padding-primary);
+  
+    resize: none;
+    outline: none;
+  }
+  
+  .newPosts__text > textarea:focus {
+    border-color: var(--color-brand-1);
+  }
+  
+  .newPosts__button {
+    display: flex;
+    justify-content: flex-end;
+  
+    width: 100%;
+  }
+  
+  .newPosts__button > button {
+    width: 4.313rem;
+    height: 2.375rem;
+  
+    color: var(--color-grey-3);
+    background-color: var(--color-grey-4);
+  
+    font-size: 0.875rem;
+    font-weight: 600;
+  
+    border-radius: var(--border-radius-primary);
+    border: 2px solid var(--color-grey-4);
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+  }
+  
+  .profile > img {
+    flex-basis: 100%;
+  }
+  
+  .profile > h2 {
+    color: var(--color-grey-1);
+  
+    font-size: var(--font-size-primary);
+    font-weight: 600;
+  
+    padding-left: 1rem;
+  }
+  
+  .profile > p {
+    color: var(--color-grey-2);
+  
+    font-size: 0.875rem;
+    font-weight: 400;
+  
+    padding-left: 1rem;
+  }
+  
+  .modalProfile {
+    height: 3.25rem;
+  }
+  
+  .oldPosts__profile {
+    height: 3.25rem;
+  }
+  
+  .container__oldPosts {
+    margin: var(--margin-primary) 0;
+  }
+  
+  .container__oldPosts > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .container__oldPosts > ul > li {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .container__oldPosts > h2 {
+    margin-bottom: 3.125rem;
+    color: var(--color-grey-1);
+  
+    font-size: var(--font-size-secondary);
+    font-weight: 700;
+  }
+  
+  .oldPosts__title > h2 {
+    width: var(--width-primary);
+  
+    color: var(--color-grey-1);
+  
+    font-size: var(--font-size-secondary);
+    font-weight: 700;
+    line-height: 2.5rem;
+    width: 100%;
+  }
+  
+  .oldPosts__text > p {
+    width: var(--width-primary);
+  
+    color: var(--color-grey-2);
+  
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    width: 100%;
+  }
+  
+  .oldPosts__button {
+    display: flex;
+    align-items: center;
+  }
+  
+  .oldPosts__button > button {
+    width: 5.75rem;
+    height: 2.375rem;
+  
+    border-radius: var(--border-radius-primary);
+    border: 2px solid var(--color-grey-1);
+  
+    color: var(--color-white);
+    background-color: var(--color-grey-1);
+  
+    font-size: 0.875;
+    font-weight: 600;
+  }
+  
+  .oldPosts__button > button:hover {
+    border-color: var(--color-grey-0);
+  
+    background-color: var(--color-grey-0);
+  }
+  
+  .oldPosts__button > span {
+    margin: 0 0.438rem 0 2rem;
+  
+    width: 1.423rem;
+    height: 1.25rem;
+  
+    cursor: pointer;
+  
+    font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;
+  }
+  
+  .oldPosts__button > span:hover {
+    color: var(--color-red);
+  }
+  
+  .heart__red {
+    color: var(--color-red);
+  }
+  
+  .container__followers {
+    margin-top: var(--margin-primary);
+  
+    padding-bottom: var(--padding-primary);
+  }
+  
+  .container__followers > h2 {
+    font-size: var(--font-size-primary);
+    font-weight: 600;
+    line-height: 1.5rem;
+  
+    margin-bottom: 3rem;
+  }
+  
+  .profile_followers {
+    width: 100%;
+  }
+  
+  .profile_followers > ul {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
+  
+    display: flex;
+  
+    width: 100%;
+    height: 7rem;
+  
+    gap: 2.5rem;
+  }
+  
+  .profile_followers > ul > li {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-bottom: 0.8rem;
+  }
+  
+  .profile_followers > ul > li > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 15rem;
+  
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .profile_followers > ul > li > div > figure {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  .profile_followers > ul > li > button {
+    width: 5.563rem;
+    height: 1.75rem;
+  
+    border-radius: 2px;
+    border: 1px solid var(--color-grey-1);
+  
+    color: var(--color-grey-1);
+  
+    font-size: 0.875;
+    font-weight: 600;
+  }
+  
+  .profile_followers > ul > li > button:hover {
+    color: var(--color-brand-1);
+    background-color: #edf2ff;
+    border-color: var(--color-brand-1);
+  }
+  
+  .profile_followers > ul > li > button:active {
+    color: var(--color-white);
+    background-color: var(--color-brand-1);
+    border-color: var(--color-brand-1);
+  }
+  
+  #seguindo {
+    color: white;
+    color: var(--color-white);
+    background-color: var(--color-brand-1);
+    border-color: var(--color-brand-1);
+  }
+  
+  @media (min-width: 1024px) {
+    main {
+      flex-direction: row;
+      flex-wrap: wrap;
+  
+      margin-top: 9.125rem;
+    }
+  
+    .container__newPosts {
+      margin: 0;
+  
+      max-width: 55%;
+      min-width: 40%;
+    }
+  
+    .newPosts__button > button {
+      color: var(--color-white);
+      background-color: var(--color-brand-1);
+  
+      border: 2px solid var(--color-brand-1);
+    }
+  
+    .newPosts__button > button:hover {
+      background-color: var(--color-brand-2);
+      border-color: var(--color-brand-2);
+    }
+  
+    .container__oldPosts {
+      width: 55%;
+    }
+  
+    .oldPosts__button > button {
+      cursor: pointer;
+    }
+  
+    .container__followers {
+      margin-top: 0;
+      padding-bottom: 0;
+      width: 30%;
+      height: 395px;
+    }
+  
+    .profile > ul {
+      overflow-x: hidden;
+  
+      display: flex;
+      flex-direction: column;
+  
+      height: 800px;
+      max-height: fit-content;
+    }
+  
+    .profile ul li {
+      width: 400px;
+  
+      margin: 0 0 10px 0;
+    }
+  
+    .profile div {
+      margin-bottom: 30px;
+    }
+  
+    .followers__seguindo {
+      color: var(--color-white);
+      background-color: var(--color-brand-1);
+      border-color: var(--color-brand-1);
+    }
+  
+    .profile_followers > ul {
+      overflow-x: hidden;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: black transparent;
+  
+      display: flex;
+      flex-direction: column;
+  
+      width: 100%;
+      height: 100%;
+  
+      gap: 2rem;
+      padding-right: 0.4rem;
+    }
+  
+    .profile_followers > ul > li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      gap: 60px;
+    }
+  
+    .profile_followers > ul > li > div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 0.4rem;
+      height: 60px;
+      width: fit-content;
+      margin-bottom: 0;
+    }
+  }

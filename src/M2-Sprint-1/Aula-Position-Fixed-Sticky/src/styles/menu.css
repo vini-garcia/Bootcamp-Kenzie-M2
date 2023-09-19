@@ -1,0 +1,24 @@
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 32px 0;
+    background-color: var(--grey-5);
+}
+
+.menu-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-links{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.menu-links a{
+    color: var(--grey-2);
+    font-size: var(--font-text);
+}

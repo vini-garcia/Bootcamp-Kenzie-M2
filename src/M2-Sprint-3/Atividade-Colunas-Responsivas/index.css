@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  header, footer, aside, section {
+    padding: 10px;
+  }
+  
+  section {
+    color: white;
+  }
+  
+  #one {
+    background-color: blue; 
+  }
+  
+  #two {
+    background-color: purple; 
+  }
+  
+  #three {
+    background-color: green; 
+  }
+  
+  #four {
+    background-color: orange;
+  }
+  
+  /* Mobile First */
+  header,footer {
+    flex: 1;
+    background-color: red;
+    text-align: center;
+  }
+  
+  article {
+    flex: 18;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  aside, section {
+    flex: 1;
+  }
+  
+  @media (min-width: 480px) {
+    article {
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+    aside {
+      flex-basis: 100%;
+  }
+    section {
+      flex: 1;
+  }
+
+}
+  
+  @media (min-width: 640px) {
+    article {
+      flex-direction: row;
+  }
+    aside {
+      flex: 1;
+  }
+  }

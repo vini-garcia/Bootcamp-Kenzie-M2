@@ -1,0 +1,41 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+section{
+    width: 100%;
+    height: 40%;
+
+    color: white;
+    background-color: aquamarine;
+    margin-bottom: 30px;
+}
+
+aside{
+    width: 100%;
+    height: 40%;
+
+    color: white;
+    background-color: aquamarine;
+}
+
+@media (min-width: 768px){
+    body{
+        display: flex;    
+    }
+
+    section{
+        width: 70%;
+        height: 40%;
+
+        margin-right: 30px;
+    }
+    
+    aside{
+        width: 30%;
+        height: 40%;
+    }
+}

@@ -1,0 +1,101 @@
+body{
+    background-color: var(--color-grey-2);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 11.188rem;
+
+    gap: 9.75rem;
+}
+
+.error__container{
+    color: var(--color-white);
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.error__container > h1{
+    font-size: 2.375rem;
+    font-weight: 700;
+    
+    margin-bottom: 1.25rem;
+}
+
+.error__container > p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    
+    width: 20.875rem;
+
+    margin-bottom: 0.563rem;
+
+}
+
+.error__container > p > span{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.error__container > button{
+    width: 21.375rem;
+    height: 3.75rem;
+
+    background-color: var(--color-brand-2);
+
+    border: 2px solid var(--color-brand-2);
+    border-radius: var(--radius-secondary);
+    
+    color: var(--color-white);
+
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.colors__container{
+    width: 26.313rem;
+    height: 23.563rem;
+
+    position: relative;
+}
+
+.red__container{
+    background-color: var(--color-brand-2);
+
+    width: var(--width-secondary);
+    height: var(--height-secondary);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red__container > img{
+    width: 7.125rem;
+
+    
+}
+
+.purple__container{
+    background-color: #520F84;
+
+    width: var(--width-secondary);
+    height: var(--height-secondary);
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}

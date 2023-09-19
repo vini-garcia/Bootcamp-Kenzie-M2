@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/globalStyles.css">
+  <link rel="stylesheet" href="../styles/register.css">
+
+  <script type="module" src="../scripts/register.js" defer></script>
+
+  <title>Kenzie Empresas - Register Page</title>
+</head>
+<body>
+  <header>
+    <div>
+      <img class="images__container__header--ellipse" src="../assets/icons/purple-ellipse.svg" alt="Purple Ellipse">
+      <img class="images__container__header--kenzie" src="../assets/icons/kenzie-empresas.svg" alt="Kenzie Empresas">
+    </div>
+    <nav>
+      <button class="homeBtn--register">Home</button>
+      <button class="loginBtn--register">Login</button>
+    </nav>
+    <div class="menu__container--register">
+      <img src="../assets/icons/hamburguer-menu.svg" alt="Icon Open Menu">
+    </div>
+  </header>
+  <main>
+    <section>
+        <h1>Cadastre-se</h1>
+        <form class="form--register">
+            <input class="input__register--name" type="text" placeholder="Seu nome">
+            <input class="input__register--email" type="email" placeholder="Seu e-mail">
+            <input class="input__register--password" type="password" placeholder="Sua senha">
+            <select name="professionalLevel">
+                <option value="emptyOption">Nível profissional</option>
+                <option value="estágio">Estágio</option>
+                <option value="júnior">Júnior</option>
+                <option value="pleno">Pleno</option>
+                <option value="sênior">Sênior</option>
+            </select>
+            <button>Cadastre-se</button>
+        </form>
+        <button>Retornar</button>
+    </section>
+  </main>
+</body>
+</html>

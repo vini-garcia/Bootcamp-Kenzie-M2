@@ -1,0 +1,24 @@
+body{
+  background-color: #999;
+  color: #000;
+}
+
+/* MEDIA QUERY */
+@media(max-width: 768px){
+  body{
+    background-color: #AF5A5A;
+    color: #FFFFFF;
+  }
+}
+
+@media(max-width: 640px){
+  body{
+    background-color: #5A73AF;
+  }
+}
+
+@media(max-width: 375px){
+  body{
+    background-color: #5AAF9C;
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/register.css">
+
+    <script type="module" src="../scripts/register.js" defer></script>
+
+    <title>Pet Info - Register</title>
+</head>
+<body>
+    <main>
+        <section class="data__container">
+            <div>
+                <h1>Cadastro</h1>
+                <button>Voltar para o login</button>
+            </div>
+            <form>
+                <div class="user__container">
+                    <label for="user">Usuário</label>
+                    <input type="text" name="user" placeholder="Digite seu usuário aqui">
+                </div>
+                <div class="email__container">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Digite seu email aqui">
+                </div>
+                <div class="photo__container">
+                    <label for="photo">Link da foto do perfil</label>
+                    <input type="url" name="photo" placeholder="Insira o link aqui">
+                </div>
+                <div class="password__container">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" placeholder="Digite sua senha aqui">
+                </div>
+                <button class="data__btn" type="submit">Cadastrar</button>
+            </form>
+            <button>Voltar para o login</button>
+        </section>  
+        <section class="text__container">
+            <div>
+                <h1>Petinfo</h1>
+                <h2>Ooooooba!</h2>
+                <p>Agora vamos poder contribuir para o bem estar do seu pet por meio do conhecimento</p>
+            </div>
+            <div class="images__container">
+                <img class="images--cat3" src="../assets/images/cat3.svg" alt="Cat">
+                <img class="images--cat4" src="../assets/images/cat4.svg" alt="Cat">
+                <img class="images--dog3" src="../assets/images/dog3.svg" alt="Dog">
+                <img class="images--cat5" src="../assets/images/cat5.svg" alt="Cat">
+            </div>
+        </section>
+    </main>
+<!--     <div class="toast__container toast__add">
+        <div class="title__container">
+            <div><img src="../assets/icons/check-solid.svg" alt="Check Icon"></div>
+            <h2>Sua conta foi criada com sucesso!</h2>
+        </div>
+        <small>Agora você pode acessar os conteúdos utilizando seu usuário e senha na página de login: <a href="">Acessar página de login</a></small>
+    </div> -->
+</body>
+</html>

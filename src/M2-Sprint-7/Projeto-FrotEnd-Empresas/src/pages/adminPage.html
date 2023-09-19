@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/globalStyles.css">
+  <link rel="stylesheet" href="../styles/adminPage.css">
+
+  <script type="module" src="../scripts/adminPage.js" defer></script>
+
+  <title>Kenzie Empresas - Admin Page</title>
+</head>
+<body>
+  <header>
+    <div class="images__container__header--adminPage">
+        <img class="images__container__header--ellipse" src="../assets/icons/purple-ellipse.svg" alt="Purple Ellipse">
+        <img class="images__container__header--kenzie" src="../assets/icons/kenzie-empresas.svg" alt="Kenzie Empresas">
+      </div>
+      <nav>
+        <button class="logOutBtn--adminPage">Logout</button>
+      </nav>
+  </header>
+  <main>
+    <div class="department__container--adminPage">
+        <h1>Departamentos</h1>
+        <select name="companies">
+            <option value="emptyOption">Selecionar empresa</option>
+        </select>
+        <div class="new__container--adminPage">
+            <img src="../assets/icons/+.svg" alt="Plus Icon">
+            <button>Criar</button>
+        </div>
+    </div>
+    <section class="department__list--adminPage">
+        <ul>
+            <!-- <li>
+                <div class="dataDepartment__Container--adminPage">
+                    <p id="departmentName--adminPage">Department Name</p>
+                    <p>Department Description</p>
+                    <p>Company Name</p>
+                </div>
+                <div class="imagesContainer1--adminPage">
+                   <img class="purpleEye--adminPage" src="../assets/icons/purple-eye.svg" alt="Purple Eye Icon"> 
+                   <img class="blackPencil--adminPage" src="../assets/icons/black-pencil.svg" alt="Black Pencil Icon"> 
+                   <img class="bin--adminPage" src="../assets/icons/bin.svg" alt="Bin Icon"> 
+                </div>
+            </li> -->
+        </ul>
+    </section>
+    <h1>Usuários Cadastrados</h1>
+    <section class="employee__list--adminPage">
+        <ul>
+            <!-- <li>
+                <div class="dataContainer--adminPage">
+                    <p id="employeeName--adminPage">User Name</p>
+                    <p>Pleno</p>
+                    <p>Company Name</p>
+                </div>
+                <div class="imagesContainer--adminPage">
+                   <img class="PurplePencil--adminPage" src="../assets/icons/purple-pencil.svg" alt="Purple Pencil Icon"> 
+                   <img class="binEmployee--adminPage" src="../assets/icons/bin.svg" alt="Bin Icon"> 
+                </div>
+            </li> -->
+        </ul>
+    </section>
+  </main>
+  <dialog class="modal__controller">
+    <!-- <div class="modal__container--selectDepartment">
+        <p>X</p>
+        <h1>Nome do departamento</h1>
+        <div class="departmentData__mainContainer--selectDepartment">
+            <div class="departmentData__container--selectDepartment">
+                <h2>Descrição do departamento</h2>
+                <p>Empresa pertencente</p>
+            </div>
+            <div class="allUsers__container--selectDepartment">
+                <form>
+                    <select name="allUser">
+                        <option value="emptyOption">Selecionar Usuário</option>
+                    </select>
+                    <button>Contratar</button>
+                </form>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <div class="userData__container--selectDepartment">
+                    <h3>Username</h3>
+                    <p>Pleno</p>
+                    <p>Company name</p>
+                </div>
+                <div class="fireBtn__container--selectDepartment">
+                    <button>Desligar</button>
+                </div>
+            </li>
+        </ul>
+    </div> -->
+
+    <!-- <div class="modal__container--updateUser">
+        <p>X</p>
+        <h1>Editar Usuário</h1>
+        <form>
+            <select class="employeesSelectJob" name="kindOfWork">
+                <option value="selectKind">Selecionar modalidade de trabalho</option>
+                <option value="home office">Home office</option>
+                <option value="presencial">Presencial</option>
+                <option value="hibrido">Híbrido</option>
+            </select>
+            <select class="employeesSelectPosition" name="position">
+                <option value="selectPosition">Selecionar nível de trabalho</option>
+                <option value="estágio">Estágio</option>
+                <option value="júnior">Júnior</option>
+                <option value="pleno">Pleno</option>
+                <option value="sênior">Sênior</option>
+            </select>
+            <button>Editar</button>
+        </form>
+    </div> -->
+
+    <!-- <div class="modal__container--deleteUser">
+        <p>X</p>
+        <h2>Realmente deseja remover o usuário 'NOME'?</h2>
+        <button>Deletar</button>
+    </div> -->
+    
+    <!-- <div class="modal__container--newDepartment">
+        <p>X</p>
+        <h1>Criar Departamento</h1>
+        <form>
+            <input class="inputName--newDepartment" type="text" name="inputName" placeholder="Nome do departamento">
+            <input class="inputText--newDepartment" type="text" name="inputText" placeholder="Descrição">
+            <select name="companies">
+                <option value="emptyOption">Selecionar empresa</option>
+            </select>
+            <button id="btnNewDepartment">Criar o departamento</button>
+        </form>
+    </div> -->
+
+    <!-- <div class="modal__container--updateDepartment">
+        <p>X</p>
+        <h1>Editar Departamento</h1>
+        <form>
+            <textarea name="description" cols="30" rows="10"></textarea>
+            <button>Salvar alterações</button>
+        </form>
+    </div> -->
+
+    <!-- <div class="modal__container--deleteDepartment">
+        <p>X</p>
+        <h2>Realmente deseja deletar o Departamento 'NOME' e demitir seus funcionários?</h2>
+        <button>Confirmar</button>
+    </div> -->
+  </dialog>
+</body>
+</html>

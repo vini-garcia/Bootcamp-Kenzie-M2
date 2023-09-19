@@ -1,0 +1,233 @@
+/* ESTILIZAÇÃO USER PAGE */
+
+/* MOBILE FIRST */
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 1.0625rem 0 27px;
+    position: relative;
+}
+
+header > div{
+    display: flex;
+    gap: 0.6875rem;
+}
+
+.images__container__header--ellipse{
+    width: 0.6875rem;
+    height: 0.6875rem;
+}
+
+.images__container__header--kenzie{
+    width: 7.5rem;
+    height: 0.9375rem;
+}
+
+nav{
+    display: none;
+    flex-direction: row;
+    gap: 0.5rem;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    z-index: 1;
+}
+
+.homeBtn--register{
+    width: 8.875rem;
+    height: 3rem;
+    background-color: var(--white100);
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.loginBtn--register{
+    width: 8.875rem;
+    height: 3rem;
+    background-color: var(--blue);
+    color: var(--white100);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.menu__container--register > img{
+    width: 1.4375rem;
+    height: 0.9375rem;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 1.75rem;
+    background-image: url('../assets/images/portrait-picture.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 32.4375rem;
+    background-color: var(--white95);
+    padding: 2.4375rem 1.0625rem;
+    gap: 1.625rem;
+
+}
+
+section > h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--black100);
+}
+
+.form--register{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.input__register--name, .input__register--email, .input__register--password, .form--register > select{
+    width: 100%;
+    height: 52px;
+    background-color: var(--white100);
+    color: var(--black50);
+    border: 1px solid var(--black20);
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.form--register > button{
+    width: 100%;
+    height: 3rem;
+    background-color: var(--blue);
+    color: var(--white100);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+section > button{
+    width: 100%;
+    height: 3rem;
+    background-color: var(--white100);
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+#hidden{
+    display: none;
+}
+
+#hiddenBtn{
+    display: flex;
+}
+
+
+/* DESKTOP */
+
+
+@media (min-width: 768.1px) {
+ 
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-color: #FFFFFF;
+        padding: 1rem 7.375rem 0 8.75rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        width: 100%;
+        height: 3.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0;
+    }   
+
+    header > div{
+        display: flex;
+        gap: 0.6875rem;
+    }
+
+    .images__container__header--ellipse{
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .images__container__header--kenzie{
+        width: 10.75rem;
+        height: 1.3125rem;
+    }
+
+    nav{
+        display: flex;
+        gap: 0.75rem;
+        top: 0;
+        right: 0;
+    }
+
+    .homeBtn--register{
+        width: 8.875rem;
+        height: 3rem;
+        background-color: var(--white100);
+        border: 1px solid var(--blue);
+        color: var(--blue);
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+
+    .loginBtn--register{
+        width: 8.875rem;
+        height: 3rem;
+        background-color: var(--blue);
+        color: var(--white100);
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+
+    .menu__container--register{
+        display: none;
+    }
+
+    .menu__container--register > img{
+        width: 1.4375rem;
+        height: 0.9375rem;
+    }
+
+    main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section{
+        width: 31.625rem;
+        height: 32.4375rem;
+    }
+}
